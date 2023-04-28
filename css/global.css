@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    background-image: url('../assets/bgLines.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+:root {
+    --receitas: #0fa30a;
+    --despesas: #ff2200;
+    --saldo: #ff7700;
+}
+
+.receitas {
+    background-color: white;
+    color: var(--receitas);
+    border: 5px solid var(--receitas);
+}
+
+.despesas {
+    background-color: white;
+    color: var(--despesas);
+    border: 5px solid var(--despesas);
+}
+
+.saldo {
+    background-color: white;
+    color: var(--saldo);
+    border: 5px solid var(--saldo);
+}
+
+
+.container {
+    margin: .5rem;
+    padding: .25rem;
+
+}
+
+.conteudo {
+    width: 100vw auto;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.titulo {
+    padding: 1rem;
+
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+
+    color: rgb(251, 0, 0);
+    background-color: #ffffff;
+    /* background-image: repeating-linear-gradient(to right, red , white , red); */
+
+    border-radius: inherit;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 10px 10px 10px 10px #ffffff;
+}
+
+.titulo img {
+    width: 1rem;
+    height: auto;
+}
+
+#calculoMes{
+    margin-top: 15px;
+}
+
+form {
+    font-weight: 500;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form input{
+    font-size: 20px;
+}
+
+fieldset {
+    text-align: center;
+    border-radius: 10px;
+    margin:  .5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset legend {
+    text-align: center;
+}
+
+fieldset input {
+    text-align: center;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.resultadoParcial {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.botao {
+    background-color: var(--receitas);
+    color: white;
+
+    font-size: larger;
+    border-radius: 10px;
+
+    margin: .5rem;
+    padding: .5rem;
+
+}
+
+
+
+@media screen and (min-height: 600px) {
+    .conteudo {
+        height: auto;
+    }
+
+}

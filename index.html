@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada Plan</title>
+
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">Ola
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="conteudo">
+                <div class="titulo">
+                    <img src="./assets/480px-Maple_Leaf.svg.png" alt="" srcset=""s>
+                    Plano Canadá
+                    <img src="./assets/480px-Maple_Leaf.svg.png" alt="" srcset=""s>
+                </div>
+                <form>
+                    <fieldset class="receitas">
+                        <legend>Receitas</legend>
+                        <label for="">Valor Hora</label><br>
+                        <input type="text" name="hora" id="valorHora"></br>
+                        
+                        <label id="calculoMes" for="calculoMes">Calculo horas/mês</label>
+                        <p id="formulaCalculo">(Valor hora x 40h semanais x 4 semanas)</p>
+<!--                         <input type=" text" name="Total" id="totalHoras"><br>
+                        <label for="">Quantidade de Semanas</label></br>
+                        <input type=" text" name="semanas" id="totalSemanas" ><br> -->
+                    </fieldset>
+                    <fieldset class="despesas">
+                        <legend>Despesas</legend>
+                        <label for="">Aluguel</label></br>
+                        <input type="text" name="aluguel" id="aluguel"><br>
+                        <label for="">Alimentação</label></br>
+                        <input type="text" name="alimentacao" id="alimentacao"><br>
+                        <label for="">Transporte</label></br>
+                        <input type="text" name="transporte" id="transporte"><br>
+                        <label for="">Celular + Internet ...</label></br>
+                        <input type="text" name="pequenasDespesas" id="pequenasDespesas"><br>
+                        <label for="">Outras despesas</label></br>
+                        <input type="text" name="outrasDespesas" id="outrasDespesas"><br>
+                    </fieldset>
+                    <fieldset class="saldo">
+                        <legend>Total</legend>
+                        <label for="">Receitas: <h2 id="receitasTotal">Resutado</h2></label>
+                        <label for="">Despesas:<h2 id="despesasTotal">Resutado</h2></label>
+                        <label for="">Saldo:<h2 id="saldoTotal">Resutado</h2></label>
+                    </fieldset>
+
+                    <button class="botao" type="button" onclick="receitas()">resultado</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="/main2.js"></script>
+</body>
+
+</html>
